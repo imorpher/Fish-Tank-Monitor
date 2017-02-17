@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec npm run lint && babel-node src --presets es2017,es2015",
+    "start": "nodemon --exec babel-node src --presets es2017,es2015",
     "build": "npm run clean && mkdir dist && babel src -s -d dist",
     "clean": "rm -rf dist",
     "lint": "eslint src"
